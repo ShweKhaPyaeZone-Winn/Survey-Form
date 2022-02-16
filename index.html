@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">ShweKha's Onlineshop Survey Form</h1>
+          <p id="description" class="description text-center">
+            Thank you for taking the time to help us improve the platform
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age</label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+
+          <div class="form-group">
+            <p>
+              Where did you find this Onlineshop?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select a place</option>
+              <option value="fb">Facabook</option>
+              <option value="ig">Instergram</option>
+              <option value="tt">Twitter</option>
+              <option value="yt">Youtube</option>
+              <option value="gg">Google</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Which of the following is your favorite in ShweKha's Onlineshop?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="cosmetics"
+                type="radio"
+                class="input-radio"
+                checked
+              />Cosmetics</label
+            >
+
+            <label
+              ><input
+                name="user-recommend"
+                value="skincare"
+                type="radio"
+                class="input-radio"
+              />Skincares</label
+            >
+
+            <label
+              ><input
+                name="user-recommend"
+                value="Medicine"
+                type="radio"
+                class="input-radio"
+              />Medicines</label
+            >
+
+            <label>
+              <input
+                name="user-recommend"
+                value="dresses"
+                type="radio"
+                class="input-radio"
+              />Dresses</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="shoes"
+                type="radio"
+                class="input-radio"
+              />Shoes</label
+            >
+
+            <label
+              ><input
+                name="user-recommend"
+                value="accessory"
+                type="radio"
+                class="input-radio"
+              />Accessories</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Would you recommend ShweKha's Onlineshop to a friend?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="definitely">Definitely</option>
+              <option value="may-be">May be</option>
+              <option value="not-sure">Not sure</option>
+              
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>

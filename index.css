@@ -1,0 +1,154 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap'); */
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
+  margin: 0;
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url(https://c8.alamy.com/comp/2BH6ATK/shopping-online-concept-smartphone-boxes-and-shopping-cart-over-white-background-colorful-design-vector-illustration-2BH6ATK.jpg);
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+h1 {
+  font-family: 'font';
+  color: #DE5D83;
+  font-weight: 400;
+  line-height: 10px;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 40%;
+}
+
+
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  color: pink;
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* form */
+
+form {
+  background: #d98695;
+  width: 50%;
+  padding: 1rem 0.625rem;
+  border-radius: 0.25rem;
+  margin-left: 25%;
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 90%;
+  height: 2rem;
+  padding: 0.375rem 0.6rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 1rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  height: 0.6rem;
+  width: 0.6rem;
+}
+
+.input-textarea {
+  min-height: 100px;
+  width: 90%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 40%;
+  padding: 0.75rem;
+  background: #DE5D83;
+  color: inherit;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin-left: 30%;
+}
+
+@font-face {
+  font-family: font;
+  src: url(./font/Fonseca-Regular\ Oblique.otf);
+}
